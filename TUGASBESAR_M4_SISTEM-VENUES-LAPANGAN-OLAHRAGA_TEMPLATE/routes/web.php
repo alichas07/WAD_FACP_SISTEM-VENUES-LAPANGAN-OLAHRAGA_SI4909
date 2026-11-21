@@ -23,7 +23,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
     Route::get('/', function () {
-        return redirect()->route('venues.index');
+        return redirect()->route('rentals.index');
     });
 
     // Dapat diakses User Biasa & Admin (Lihat tabel & cari/filter)

@@ -34,7 +34,7 @@ class AuthController extends Controller
 
             // Beri notifikasi berdasarkan role
             $roleLabel = Auth::user()->role === 'admin' ? 'Administrator' : 'User Biasa';
-            return redirect()->intended(route('venues.index'))
+            return redirect()->intended(route('rentals.index'))
                 ->with('success', "Selamat datang, " . Auth::user()->name . "! Anda login sebagai {$roleLabel}.");
         }
 
