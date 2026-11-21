@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<!-- modul rental -->
 @section('content')
 <div class="space-y-4">
     <!-- Header -->
